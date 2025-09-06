@@ -2,7 +2,7 @@
 
 Plugin Này Được Làm Bởi FTL2nd Rebuild Sources Code by Haoyi_VN
 
-## Yêu cầu hệ thống
+## Yêu cầu
 
 - Java 17 hoặc cao hơn
 - Apache Maven 3.6.0 hoặc cao hơn
