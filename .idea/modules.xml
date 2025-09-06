@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/META-INF/maven/me.ftl2nd/cloudguardlite/cloudguardlite.iml" filepath="$PROJECT_DIR$/META-INF/maven/me.ftl2nd/cloudguardlite/cloudguardlite.iml" />
+    </modules>
+  </component>
+</project>

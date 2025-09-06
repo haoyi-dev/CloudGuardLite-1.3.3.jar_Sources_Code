@@ -1,0 +1,54 @@
+# Plugin này được viết bởi FTL2nd, đây là tài nguyên miễn phí
+# Sources code rebuild by Haoyi Developer
+# Nếu bạn phải "trả tiền" để sử dụng plugin này, bạn đã bị lừa!
+# Tìm tôi trên internet: https://ftl2nd.online/
+
+# Danh sách những người chơi được phép sở hữu quyền OP
+# Mỗi người chơi là một dòng, nhớ viết đúng theo mẫu hoặc sẽ bị lỗi
+op_list:
+  - "Haoyi_VN"
+#  - "tên_người_chơi_2"
+
+# Các quyền mà những người chơi nằm ngoài danh sách ở trên không được sở hữu (Quyền nhạy cảm)
+# Mỗi quyền là một dòng
+sensitive_permissions:
+  - "*"
+  - "essentials.*"
+  - "worldedit.*"
+  - "worldguard.*"
+  - "luckperms.*"
+
+# Lệnh thực thi nếu người chơi nằm ngoài danh sách sở hữu quyền OP hoặc quyền nhạy cảm
+# %player% sẽ được thay thế bằng tên người chơi vi phạm
+punish_command:
+  - "deop %player%"
+  - "lp user %player% permission clear"
+  - "ban %player% Khai thác OP"
+
+# Bao nhiêu lâu thì plugin sẽ kiểm tra trạng thái OP/Quyền nhạy cảm của người chơi 1 lần?
+check_interval: 150 # Đơn vị: Miliseconds (ms)
+
+# Vô hiệu hoá lệnh /op (hoặc /minecraft:op) của server?
+disable_op_command: false
+
+# Chặn người chơi nằm ngoài danh sách chuyển sang gamemode creative?
+block_gamemode_creative: true
+
+# Nếu plugin này bị vô hiệu hoá trái phép, có nên dừng server không?
+stop_server: true
+
+# Logout actions
+# Dùng để chống lại việc log acc bằng cách thực thi 1 số hành động khi người chơi nằm trong danh sách thoát khỏi server!
+logout_actions:
+  enable: true
+  commands:
+    - "deop %player%"
+    - "lp user %player% permission clear"
+    - "lp user %player% parent set default"
+
+# Tuỳ chọn bật/tắt tính năng "anti UUID spoof" để phù hợp nếu bạn đang sử dụng plugin làm sai lệch UUID (ví dụ các plugin tự động đăng nhập cho người chơi có tài khoản Premium)
+# Nếu đang sử dụng các plugin như nLogin Premium, JPremium, ... thì nên tắt tính năng này!
+anti_uuid_spoof: true
+
+# Phiên bản config, vui lòng không thay đổi!
+config_version: 1.1
